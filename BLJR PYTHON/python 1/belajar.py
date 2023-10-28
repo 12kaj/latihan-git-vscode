@@ -1,1 +1,0 @@
-print("saya adalah karan")
