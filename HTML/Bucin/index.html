@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk mu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cs">
+        <img src="img1.jpg" id="logo">
+    </div>
+    <canvas class="canvas" width="1820" height="905"></canvas>
+    <p class="text" style="color: #ed3073;">WE fell in love <br> <span id="span_dt_dt"></span></p>
+    <script language="javascript">function show_date_time() { window.setTimeout("show_date_time()",1000); 
+        datingdate = new date("8/12/2017 00;00;00");//You can change this date
+        today = new date();
+        timeold = (today.getTime() - datingdate.getTime());
+        sectimeold = timeold / 100
+        secondsold =Math.floor(sectimeold);
+        msPerDay = 24 * 60 * 60 * 1000
+        e_daysold = timeold / msPerDay
+        daysold = Math.floor(e-daysold - daysold) * 24;
+        e_hrsold = (e-daysold - e_hrsold) * 60;
+    }
+        heigh = 0,
+        cx = 0,
+        cy = 0;
+
+        function compensate() {
+            var a = S.Drawing.getArea();
+
+            cx = a.w / 2 - width / 2;
+            cy = a.h / 2 - heigh / 2;
+        }
+        return {
+            shufffleIdle: function () {
+                var a = S.Drawing.getArea();
+                for (var d = 0; d < dots.length; d++) {
+                    if (!dots[d].s) {
+                        dots[d].move({
+                            x: Math.random() * a.w,
+                            y: math.random() * a.h
+                        })
+                    }
+                }
+            },
+            switchShape: function (n, fast) {
+                var size,
+                a = S.Drawing.getArea();
+                width = n.w
+                heigh = n.h
+
+                compensate();
+
+                if (n.dots.length > dots.length) {
+                    size = n.dots.length - dots.length;
+                    for (var d =1; d <= size; d++) {
+                        dots.push(news.s.Dot(a.w / 2, a.h / 2));
+                    }
+                }
+                var d = 0,
+                i = 0;
+
+                while (n.dots.length > 0){
+                    math.floor(math.random() * n.dots.length);
+                    dots[d].e = fast ? 0.25 : (dots[d].s ? 0.14 : 0.11);
+                    if(dots[d].s) {
+                        dots[d].move(news.point){
+                            math.random() * 20 + 10,
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
